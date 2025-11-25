@@ -24,13 +24,13 @@ Sistema distribuído com múltiplos agentes de IA para análise automatizada de 
 - **Tecnologias:** FastAPI, Python, MCP
 - **Função:** Roteamento inteligente entre agentes
 
-#### 3. Spreadsheet Agent (FastAPI)
+#### 3. Spreadsheet Agent
 
 - **Porta:** 8001
 - **IA:** Isolation Forest (scikit-learn)
 - **Função:** Detecção de outliers em planilhas
 
-#### 4. Image Agent (FastAPI)
+#### 4. Image Agent
 
 - **Porta:** 8002
 - **IA:** EasyOCR + OpenCV
@@ -112,8 +112,8 @@ agents:
 services:
   frontend:    # React + Nginx
   orchestrator: # FastAPI + MCP
-  spreadsheet_agent: # FastAPI + scikit-learn
-  image_agent:      # FastAPI + EasyOCR
+  spreadsheet_agent: # Scikit-learn
+  image_agent:      # EasyOCR
 ```
 
 ### Comunicação de Rede
